@@ -1,0 +1,43 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+    
+}
+.title{
+    font-size: 44px;
+    margin-left: 5%;
+    color: olive;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 0.6em;
+    text-shadow: 3px 1px 15px olive;
+}
+
+.nav {
+    border-left: solid 3px olive;
+    border-bottom-left-radius: 80px;
+    margin-right: 10%;
+}
+.nav li {
+    font-size: 18px;
+    list-style-type: none;
+    line-height: 24px;
+}
+.nav li:hover {
+    text-decoration: underline 3px olive ;
+}
+
+.navItem1 {
+    margin-left: -35%;
+}
+.navItem2 {
+   margin-left: -15%;
+}
+.navItem3 {
+    margin-left: 5%;
+}
+.navItem4 {
+    margin-left: 25%;
+}
