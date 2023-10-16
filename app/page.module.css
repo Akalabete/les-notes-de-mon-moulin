@@ -1,3 +1,7 @@
+.body {
+  min-width: 340px;
+}
+
 .sectionTitles {
   text-align: center;
   font-size: 32px;
@@ -11,39 +15,80 @@
   display: flex;
   flex-direction: row;
 }
+
+
 .presContainer p {
   width: 70%;
   font-size: 18px;
   line-height: 22px;
+  margin-left: 10px;
 }
 .presContainer img{
   margin: auto;
   border: solid 3px peru;
 }
 
+@media screen and (max-width: 700px){
+  .presContainer {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .presContainer p {
+    width: 100%;
+    margin: auto;
+    padding : 20px;
+  }
+  
+}
 .ambianceContainer {
-
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-evenly;
-  margin: 50px 0;
-
-  
-  
+  margin: 50px 0;  
 }
+@media screen and (max-width: 850px){
+  .ambianceContainer {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .cubanoContainer, .latinoContainer, .ensembleContainer{
+    margin: 20px auto;
+    min-width: 60%
+  }
+  .cubanoContainer img , .latinoContainer img, .ensembleContainer img{
+    max-height: 20%;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 850px){
+  .cubanoContainer img , .latinoContainer img, .ensembleContainer img{
+    width: 70%;
+  }}
 
-.cubanoContainer, .latinoContainer{
+.cubanoContainer, .latinoContainer {
   border: 2px solid olive;
   width : 30%;
   box-shadow: 10px 5px 5px olive;
   padding: 0 30px;
 }
-.cubanoContainer p, .latinoContainer p{
+.ensembleContainer {
+  text-align: center;
+  margin: 20px auto;
+  border: 2px solid olive;
+  width: 60%;
+  box-shadow: 10px 5px 5px olive;
+  padding: 0 30px;
+}
+.cubanoContainer p, .latinoContainer p, .ensembleContainer p{
   font-size: 18px;
 }
 
-.cubanoContainer img , .latinoContainer img {
+.cubanoContainer img , .latinoContainer img, .ensembleContainer img{
   margin: auto;
   box-shadow: 10px 5px 5px olive;
 }
@@ -58,21 +103,75 @@
   display: flex;
   justify-content: space-evenly;
 }
+@media screen and (max-width:850px){
+  .galleryContainer img{
+    max-width: 30%;
+    height: 35%;
+  }
+}
+
 .contactContainer {
   display: flex;
   flex-direction: row;
+  margin: 10px 0;
+  
+  
+  
+}
+.imgAproposWrapper{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
   margin-left: 20%;
 }
+@media screen and (max-width:850px){
+  .imgAproposWrapper{
+    flex-direction: column;
+  }
+  .imgAproposWrapper img{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+  }
+
+  .contactImageWrapper {
+    margin: auto;
+  }
+}
+
+
 .aPropos {
-  width: 30%;
   margin-left: 15px;
 }
 .contactInfos {
-  margin-left: 15px;
+  width: 40%;
+   
+}
+
+.centeredAdress {
+  margin: 0 10px;
 }
 .darken {
   background-color: rgba(45, 25, 1, 0.784); 
 }
 .brighten {
   background-color: white;
+}
+
+.adressContainer {
+  text-align: left;
+  width: 50%;
+}
+.adressFlexer { 
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 700px){
+  .adressFlexer {
+    flex-direction: column;
+  }
+  .adressContainer {
+    width: 100%;
+    margin-left: 0;
+  }
 }
