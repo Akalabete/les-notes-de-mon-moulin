@@ -71,11 +71,11 @@ export default function Home() {
             onClick={() => toggleAmbiance('cubano')}>
               <h3>La Isabelica**</h3>
               <Image
-                src="https://picsum.photos/250/150"
+                src="/La_isabelica.avif"
                 alt="photo démo"
                 className={styles.presPhoto}
                 width={250}
-                height={150}
+                height={205}
                 priority
               />
               <p><strong>La Isabelica</strong> est un trio de &ldquo;son cubano&ldquo;
