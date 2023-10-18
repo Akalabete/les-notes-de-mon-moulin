@@ -1,3 +1,6 @@
+@import '../../app/variables.module.scss';
+
+
 .headerWrapper {
     display: flex;
     flex-direction: row;
@@ -8,16 +11,16 @@
 .title{
     font-size: 44px;
     margin-left: 5%;
-    color: olive;
+    color: $sweet-green;
     font-weight: lighter;
     font-style: italic;
     letter-spacing: 0.4em;
-    text-shadow: 3px 1px 15px olive;
+    text-shadow: 3px 1px 15px $sweet-green;
 }
 
 
 .nav {
-    border-left: solid 3px olive;
+    border-left: solid 3px $sweet-green;
     border-bottom-left-radius: 80px;
     margin-right: 10%;
     max-height: 120px;
@@ -32,7 +35,7 @@
     line-height: 24px;
 }
 .nav li:hover {
-    text-decoration: underline 3px olive ;
+    text-decoration: underline 3px $sweet-green ;
 }
 
 .navItem1 {

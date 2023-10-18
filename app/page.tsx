@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import styles from './page.module.css';
+import styles from './page.module.scss';
 import Header from '../component/header/page';
 import Footer from '../component/footer/page';
 import { useState } from 'react';
@@ -46,7 +46,7 @@ export default function Home() {
       </section>
       <section id="prestation">
         <h2 className={styles.sectionTitles}>La musique au fil de vos événements est à votre tempo, latino-cubain</h2>
-        <h3 className={styles.sectionUnderTitle}><span>Cliquez sur une photo pour votre démo d&apos;ambiance</span></h3>
+        <h3 className={styles.sectionUnderTitle}>Cliquez sur une photo pour votre démo d&apos;ambiance</h3>
         <div className={styles.ambianceContainer}>
           <div className={`${styles.latinoContainer} ${selectedAmbiance === 'latino' ? styles.brighten : styles.darken}`}
           onClick={() => toggleAmbiance('latino')}>
