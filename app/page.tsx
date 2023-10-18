@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <main className={`${styles.main} ${selectedAmbiance ? styles.darken : ''}`}>
+    <main className={`${styles.main} ${selectedAmbiance ? styles.darkenedBG : ''}`}>
       <section id="presentation">
         <h2 className={styles.sectionTitles}>La musique au fil de vos événements.</h2>
         <div className={styles.presContainer}>
